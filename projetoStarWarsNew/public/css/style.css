@@ -1,0 +1,138 @@
+/* Geral para o corpo e containers */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo para o título e legendas */
+fieldset {
+    border: 2px solid #f1c40f;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+h2 {
+    color: #f1c40f;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Lista de filmes ou detalhes */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #2c2c2c;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #f1c40f;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+ul li a:hover {
+    color: #e67e22;
+}
+
+ul li em {
+    display: block;
+    margin-top: 5px;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #bdc3c7;
+}
+
+/* Botões */
+button.btn {
+    background-color: #f1c40f;
+    border: none;
+    color: #121212;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #e67e22;
+}
+
+a.btn-link {
+    text-decoration: none;
+    color: #121212;
+    font-weight: bold;
+}
+
+a.btn-link:hover {
+    color: #ffffff;
+}
+
+/* Formulário de busca */
+.form-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f1c40f;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.form-group input[type="text"]::placeholder {
+    color: #bdc3c7;
+}
+
+.form-group input[type="text"]:focus {
+    outline: none;
+    border-color: #e67e22;
+}
+
+button[type="submit"] {
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    button.btn {
+        padding: 8px 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}

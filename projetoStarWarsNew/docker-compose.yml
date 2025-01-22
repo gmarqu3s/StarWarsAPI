@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  php-apache:
+    image: php:7.4-apache
+    container_name: apache_service
+    ports:
+      - "8000:80"
+    volumes:
+      - ./:/var/www/html
+
+  db:
+    image: mysql:8.0
+    container_name: db_sw
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+    ports:
+      - 3307:3306
+    volumes:
+      - ./my_db:/var/lib/mysql
+      - ./db_dll/createDataBase.sql:/config-init/createDataBase.sql
